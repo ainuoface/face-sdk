@@ -1,0 +1,11 @@
+{
+  "modelVersion": "face_mbf_512",
+  "fileName": "mobileface.onnx",
+  "inputSize": 112,
+  "inputChannels": 3,
+  "embeddingDim": 512,
+  "inputMean": 127.5,
+  "inputStd": 127.5,
+  "normalizeEmbedding": true,
+  "similarityMetric": "COSINE"
+}
