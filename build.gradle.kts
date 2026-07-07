@@ -2,9 +2,9 @@ plugins {
     `maven-publish`
 }
 
-val sdkVersion = "v0.1.9"
+val sdkVersion = "v0.2.0"
 val publicationVersion = System.getenv("VERSION") ?: sdkVersion
-val sdkBinaryVersion = "0.1.9"
+val sdkBinaryVersion = "0.2.0"
 group = "com.github.ainuoface"
 version = publicationVersion
 

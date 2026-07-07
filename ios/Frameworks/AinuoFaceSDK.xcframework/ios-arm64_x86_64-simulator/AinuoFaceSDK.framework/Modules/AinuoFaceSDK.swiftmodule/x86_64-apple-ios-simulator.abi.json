@@ -2714,35 +2714,6 @@
           },
           {
             "kind": "Function",
-            "name": "onRegisterReadyChanged",
-            "printedName": "onRegisterReadyChanged(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B22RegisterViewControllerC02onD12ReadyChangedyySbF",
-            "mangledName": "$s12AinuoFaceSDK0B22RegisterViewControllerC02onD12ReadyChangedyySbF",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onRegistered",
             "printedName": "onRegistered(_:)",
             "children": [
@@ -9674,62 +9645,6 @@
                 "moduleName": "AinuoFaceSDK"
               },
               {
-                "kind": "Var",
-                "name": "errorDescription",
-                "printedName": "errorDescription",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:12AinuoFaceSDK0B12FeatureCodecO0E5ErrorO16errorDescriptionSSSgvp",
-                "mangledName": "$s12AinuoFaceSDK0B12FeatureCodecO0E5ErrorO16errorDescriptionSSSgvp",
-                "moduleName": "AinuoFaceSDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:12AinuoFaceSDK0B12FeatureCodecO0E5ErrorO16errorDescriptionSSSgvg",
-                    "mangledName": "$s12AinuoFaceSDK0B12FeatureCodecO0E5ErrorO16errorDescriptionSSSgvg",
-                    "moduleName": "AinuoFaceSDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -9861,13 +9776,6 @@
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "LocalizedError",
-                "printedName": "LocalizedError",
-                "usr": "s:10Foundation14LocalizedErrorP",
-                "mangledName": "$s10Foundation14LocalizedErrorP"
               },
               {
                 "kind": "Conformance",
@@ -18146,1925 +18054,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "FaceDetectResult",
-        "printedName": "FaceDetectResult",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "success",
-            "printedName": "success",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV7successSbvp",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV7successSbvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV7successSbvg",
-                "mangledName": "$s12AinuoFaceSDK0B12DetectResultV7successSbvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceStatusCode",
-                "printedName": "AinuoFaceSDK.FaceStatusCode",
-                "usr": "s:12AinuoFaceSDK0B10StatusCodeO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV4codeAA0B10StatusCodeOvp",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV4codeAA0B10StatusCodeOvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceStatusCode",
-                    "printedName": "AinuoFaceSDK.FaceStatusCode",
-                    "usr": "s:12AinuoFaceSDK0B10StatusCodeO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV4codeAA0B10StatusCodeOvg",
-                "mangledName": "$s12AinuoFaceSDK0B12DetectResultV4codeAA0B10StatusCodeOvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "message",
-            "printedName": "message",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV7messageSSSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV7messageSSSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV7messageSSSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B12DetectResultV7messageSSSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "faces",
-            "printedName": "faces",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[AinuoFaceSDK.FaceBox]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceBox",
-                    "printedName": "AinuoFaceSDK.FaceBox",
-                    "usr": "s:12AinuoFaceSDK0B3BoxV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV5facesSayAA0B3BoxVGvp",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV5facesSayAA0B3BoxVGvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[AinuoFaceSDK.FaceBox]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FaceBox",
-                        "printedName": "AinuoFaceSDK.FaceBox",
-                        "usr": "s:12AinuoFaceSDK0B3BoxV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV5facesSayAA0B3BoxVGvg",
-                "mangledName": "$s12AinuoFaceSDK0B12DetectResultV5facesSayAA0B3BoxVGvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(success:code:message:faces:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceDetectResult",
-                "printedName": "AinuoFaceSDK.FaceDetectResult",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AinuoFaceSDK.FaceStatusCode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceStatusCode",
-                    "printedName": "AinuoFaceSDK.FaceStatusCode",
-                    "usr": "s:12AinuoFaceSDK0B10StatusCodeO"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[AinuoFaceSDK.FaceBox]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceBox",
-                    "printedName": "AinuoFaceSDK.FaceBox",
-                    "usr": "s:12AinuoFaceSDK0B3BoxV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV7success4code7message5facesACSb_AA0B10StatusCodeOSgSSSgSayAA0B3BoxVGtcfc",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV7success4code7message5facesACSb_AA0B10StatusCodeOSgSSSgSayAA0B3BoxVGtcfc",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceDetectResult",
-                "printedName": "AinuoFaceSDK.FaceDetectResult",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceDetectResult",
-                "printedName": "AinuoFaceSDK.FaceDetectResult",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B12DetectResultV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12AinuoFaceSDK0B12DetectResultV2eeoiySbAC_ACtFZ",
-            "moduleName": "AinuoFaceSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12AinuoFaceSDK0B12DetectResultV",
-        "mangledName": "$s12AinuoFaceSDK0B12DetectResultV",
-        "moduleName": "AinuoFaceSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FacePoint",
-        "printedName": "FacePoint",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "x",
-            "printedName": "x",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B5PointV1xSfvp",
-            "mangledName": "$s12AinuoFaceSDK0B5PointV1xSfvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B5PointV1xSfvg",
-                "mangledName": "$s12AinuoFaceSDK0B5PointV1xSfvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "y",
-            "printedName": "y",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B5PointV1ySfvp",
-            "mangledName": "$s12AinuoFaceSDK0B5PointV1ySfvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B5PointV1ySfvg",
-                "mangledName": "$s12AinuoFaceSDK0B5PointV1ySfvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(x:y:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12AinuoFaceSDK0B5PointV1x1yACSf_Sftcfc",
-            "mangledName": "$s12AinuoFaceSDK0B5PointV1x1yACSf_Sftcfc",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B5PointV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12AinuoFaceSDK0B5PointV2eeoiySbAC_ACtFZ",
-            "moduleName": "AinuoFaceSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12AinuoFaceSDK0B5PointV",
-        "mangledName": "$s12AinuoFaceSDK0B5PointV",
-        "moduleName": "AinuoFaceSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceLandmarks",
-        "printedName": "FaceLandmarks",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "leftEye",
-            "printedName": "leftEye",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV7leftEyeAA0B5PointVvp",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV7leftEyeAA0B5PointVvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacePoint",
-                    "printedName": "AinuoFaceSDK.FacePoint",
-                    "usr": "s:12AinuoFaceSDK0B5PointV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV7leftEyeAA0B5PointVvg",
-                "mangledName": "$s12AinuoFaceSDK0B9LandmarksV7leftEyeAA0B5PointVvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "rightEye",
-            "printedName": "rightEye",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV8rightEyeAA0B5PointVvp",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV8rightEyeAA0B5PointVvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacePoint",
-                    "printedName": "AinuoFaceSDK.FacePoint",
-                    "usr": "s:12AinuoFaceSDK0B5PointV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV8rightEyeAA0B5PointVvg",
-                "mangledName": "$s12AinuoFaceSDK0B9LandmarksV8rightEyeAA0B5PointVvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "nose",
-            "printedName": "nose",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV4noseAA0B5PointVvp",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV4noseAA0B5PointVvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacePoint",
-                    "printedName": "AinuoFaceSDK.FacePoint",
-                    "usr": "s:12AinuoFaceSDK0B5PointV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV4noseAA0B5PointVvg",
-                "mangledName": "$s12AinuoFaceSDK0B9LandmarksV4noseAA0B5PointVvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "leftMouth",
-            "printedName": "leftMouth",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV9leftMouthAA0B5PointVvp",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV9leftMouthAA0B5PointVvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacePoint",
-                    "printedName": "AinuoFaceSDK.FacePoint",
-                    "usr": "s:12AinuoFaceSDK0B5PointV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV9leftMouthAA0B5PointVvg",
-                "mangledName": "$s12AinuoFaceSDK0B9LandmarksV9leftMouthAA0B5PointVvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "rightMouth",
-            "printedName": "rightMouth",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV10rightMouthAA0B5PointVvp",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV10rightMouthAA0B5PointVvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacePoint",
-                    "printedName": "AinuoFaceSDK.FacePoint",
-                    "usr": "s:12AinuoFaceSDK0B5PointV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV10rightMouthAA0B5PointVvg",
-                "mangledName": "$s12AinuoFaceSDK0B9LandmarksV10rightMouthAA0B5PointVvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(leftEye:rightEye:nose:leftMouth:rightMouth:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceLandmarks",
-                "printedName": "AinuoFaceSDK.FaceLandmarks",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacePoint",
-                "printedName": "AinuoFaceSDK.FacePoint",
-                "usr": "s:12AinuoFaceSDK0B5PointV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV7leftEye05rightF04nose0E5Mouth0gI0AcA0B5PointV_A4Jtcfc",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV7leftEye05rightF04nose0E5Mouth0gI0AcA0B5PointV_A4Jtcfc",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceLandmarks",
-                "printedName": "AinuoFaceSDK.FaceLandmarks",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceLandmarks",
-                "printedName": "AinuoFaceSDK.FaceLandmarks",
-                "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B9LandmarksV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12AinuoFaceSDK0B9LandmarksV2eeoiySbAC_ACtFZ",
-            "moduleName": "AinuoFaceSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12AinuoFaceSDK0B9LandmarksV",
-        "mangledName": "$s12AinuoFaceSDK0B9LandmarksV",
-        "moduleName": "AinuoFaceSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceBox",
-        "printedName": "FaceBox",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "left",
-            "printedName": "left",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV4leftSivp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV4leftSivp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV4leftSivg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV4leftSivg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "top",
-            "printedName": "top",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV3topSivp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV3topSivp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV3topSivg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV3topSivg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "right",
-            "printedName": "right",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV5rightSivp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV5rightSivp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV5rightSivg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV5rightSivg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bottom",
-            "printedName": "bottom",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV6bottomSivp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV6bottomSivp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV6bottomSivg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV6bottomSivg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "confidence",
-            "printedName": "confidence",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV10confidenceSfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV10confidenceSfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV10confidenceSfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV10confidenceSfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "trackingId",
-            "printedName": "trackingId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV10trackingIdSiSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV10trackingIdSiSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV10trackingIdSiSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV10trackingIdSiSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "yaw",
-            "printedName": "yaw",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV3yawSfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV3yawSfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV3yawSfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV3yawSfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "pitch",
-            "printedName": "pitch",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV5pitchSfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV5pitchSfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV5pitchSfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV5pitchSfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "roll",
-            "printedName": "roll",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV4rollSfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV4rollSfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV4rollSfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV4rollSfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "leftEyeOpenProbability",
-            "printedName": "leftEyeOpenProbability",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV22leftEyeOpenProbabilitySfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV22leftEyeOpenProbabilitySfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV22leftEyeOpenProbabilitySfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV22leftEyeOpenProbabilitySfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "rightEyeOpenProbability",
-            "printedName": "rightEyeOpenProbability",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV23rightEyeOpenProbabilitySfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV23rightEyeOpenProbabilitySfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV23rightEyeOpenProbabilitySfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV23rightEyeOpenProbabilitySfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "smilingProbability",
-            "printedName": "smilingProbability",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV18smilingProbabilitySfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV18smilingProbabilitySfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV18smilingProbabilitySfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV18smilingProbabilitySfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "mouthOpenProbability",
-            "printedName": "mouthOpenProbability",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV20mouthOpenProbabilitySfSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV20mouthOpenProbabilitySfSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Float?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV20mouthOpenProbabilitySfSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV20mouthOpenProbabilitySfSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "landmarks",
-            "printedName": "landmarks",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AinuoFaceSDK.FaceLandmarks?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceLandmarks",
-                    "printedName": "AinuoFaceSDK.FaceLandmarks",
-                    "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AinuoFaceSDK0B3BoxV9landmarksAA0B9LandmarksVSgvp",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV9landmarksAA0B9LandmarksVSgvp",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AinuoFaceSDK.FaceLandmarks?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FaceLandmarks",
-                        "printedName": "AinuoFaceSDK.FaceLandmarks",
-                        "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AinuoFaceSDK0B3BoxV9landmarksAA0B9LandmarksVSgvg",
-                "mangledName": "$s12AinuoFaceSDK0B3BoxV9landmarksAA0B9LandmarksVSgvg",
-                "moduleName": "AinuoFaceSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(left:top:right:bottom:confidence:trackingId:yaw:pitch:roll:leftEyeOpenProbability:rightEyeOpenProbability:smilingProbability:mouthOpenProbability:landmarks:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceBox",
-                "printedName": "AinuoFaceSDK.FaceBox",
-                "usr": "s:12AinuoFaceSDK0B3BoxV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Float?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AinuoFaceSDK.FaceLandmarks?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceLandmarks",
-                    "printedName": "AinuoFaceSDK.FaceLandmarks",
-                    "usr": "s:12AinuoFaceSDK0B9LandmarksV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12AinuoFaceSDK0B3BoxV4left3top5right6bottom10confidence10trackingId3yaw5pitch4roll0E18EyeOpenProbability0gopQ007smilingQ005mouthpQ09landmarksACSi_S3iSfSgSiSgA7rA0B9LandmarksVSgtcfc",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV4left3top5right6bottom10confidence10trackingId3yaw5pitch4roll0E18EyeOpenProbability0gopQ007smilingQ005mouthpQ09landmarksACSi_S3iSfSgSiSgA7rA0B9LandmarksVSgtcfc",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceBox",
-                "printedName": "AinuoFaceSDK.FaceBox",
-                "usr": "s:12AinuoFaceSDK0B3BoxV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceBox",
-                "printedName": "AinuoFaceSDK.FaceBox",
-                "usr": "s:12AinuoFaceSDK0B3BoxV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B3BoxV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12AinuoFaceSDK0B3BoxV2eeoiySbAC_ACtFZ",
-            "moduleName": "AinuoFaceSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12AinuoFaceSDK0B3BoxV",
-        "mangledName": "$s12AinuoFaceSDK0B3BoxV",
-        "moduleName": "AinuoFaceSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "FaceSearchMatch",
         "printedName": "FaceSearchMatch",
         "children": [
@@ -20940,33 +18929,6 @@
           },
           {
             "kind": "Function",
-            "name": "onRegisterReadyChanged",
-            "printedName": "onRegisterReadyChanged(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B26RegisterCameraViewListenerP02onD12ReadyChangedyySbF",
-            "mangledName": "$s12AinuoFaceSDK0B26RegisterCameraViewListenerP02onD12ReadyChangedyySbF",
-            "moduleName": "AinuoFaceSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceRegisterCameraViewListener>",
-            "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceRegisterCameraViewListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onRegistered",
             "printedName": "onRegistered(_:)",
             "children": [
@@ -21072,32 +19034,6 @@
             "declKind": "Func",
             "usr": "s:12AinuoFaceSDK0B26RegisterCameraViewListenerPAAE7onReadyyyF",
             "mangledName": "$s12AinuoFaceSDK0B26RegisterCameraViewListenerPAAE7onReadyyyF",
-            "moduleName": "AinuoFaceSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceRegisterCameraViewListener>",
-            "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceRegisterCameraViewListener>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onRegisterReadyChanged",
-            "printedName": "onRegisterReadyChanged(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B26RegisterCameraViewListenerPAAE02onD12ReadyChangedyySbF",
-            "mangledName": "$s12AinuoFaceSDK0B26RegisterCameraViewListenerPAAE02onD12ReadyChangedyySbF",
             "moduleName": "AinuoFaceSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceRegisterCameraViewListener>",
             "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceRegisterCameraViewListener>",
@@ -21500,29 +19436,6 @@
             "declKind": "Func",
             "usr": "s:12AinuoFaceSDK0B18RegisterCameraViewC23currentConfigForTestingAA0bdefH0VyF",
             "mangledName": "$s12AinuoFaceSDK0B18RegisterCameraViewC23currentConfigForTestingAA0bdefH0VyF",
-            "moduleName": "AinuoFaceSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "confirmRegistration",
-            "printedName": "confirmRegistration()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B18RegisterCameraViewC19confirmRegistrationyyF",
-            "mangledName": "$s12AinuoFaceSDK0B18RegisterCameraViewC19confirmRegistrationyyF",
             "moduleName": "AinuoFaceSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -23509,33 +21422,6 @@
           },
           {
             "kind": "Function",
-            "name": "onFaceDetected",
-            "printedName": "onFaceDetected(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceDetectResult",
-                "printedName": "AinuoFaceSDK.FaceDetectResult",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B24SearchCameraViewListenerP02onB8DetectedyyAA0B12DetectResultVF",
-            "mangledName": "$s12AinuoFaceSDK0B24SearchCameraViewListenerP02onB8DetectedyyAA0B12DetectResultVF",
-            "moduleName": "AinuoFaceSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceSearchCameraViewListener>",
-            "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceSearchCameraViewListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onMatched",
             "printedName": "onMatched(_:)",
             "children": [
@@ -23668,32 +21554,6 @@
             "declKind": "Func",
             "usr": "s:12AinuoFaceSDK0B24SearchCameraViewListenerPAAE7onReadyyyF",
             "mangledName": "$s12AinuoFaceSDK0B24SearchCameraViewListenerPAAE7onReadyyyF",
-            "moduleName": "AinuoFaceSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceSearchCameraViewListener>",
-            "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceSearchCameraViewListener>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFaceDetected",
-            "printedName": "onFaceDetected(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceDetectResult",
-                "printedName": "AinuoFaceSDK.FaceDetectResult",
-                "usr": "s:12AinuoFaceSDK0B12DetectResultV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12AinuoFaceSDK0B24SearchCameraViewListenerPAAE02onB8DetectedyyAA0B12DetectResultVF",
-            "mangledName": "$s12AinuoFaceSDK0B24SearchCameraViewListenerPAAE02onB8DetectedyyAA0B12DetectResultVF",
             "moduleName": "AinuoFaceSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : AinuoFaceSDK.FaceSearchCameraViewListener>",
             "sugared_genericSig": "<Self where Self : AinuoFaceSDK.FaceSearchCameraViewListener>",
@@ -27747,6 +25607,13 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "AinuoFaceSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -28510,6 +26377,267 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ModelAssetError",
+        "printedName": "ModelAssetError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidMagic",
+            "printedName": "invalidMagic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AinuoFaceSDK.ModelAssetError.Type) -> AinuoFaceSDK.ModelAssetError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelAssetError",
+                    "printedName": "AinuoFaceSDK.ModelAssetError",
+                    "usr": "s:12AinuoFaceSDK15ModelAssetErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AinuoFaceSDK.ModelAssetError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelAssetError",
+                        "printedName": "AinuoFaceSDK.ModelAssetError",
+                        "usr": "s:12AinuoFaceSDK15ModelAssetErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AinuoFaceSDK15ModelAssetErrorO12invalidMagicyA2CmF",
+            "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO12invalidMagicyA2CmF",
+            "moduleName": "AinuoFaceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AinuoFaceSDK15ModelAssetErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO16errorDescriptionSSSgvp",
+            "moduleName": "AinuoFaceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AinuoFaceSDK15ModelAssetErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO16errorDescriptionSSSgvg",
+                "moduleName": "AinuoFaceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModelAssetError",
+                "printedName": "AinuoFaceSDK.ModelAssetError",
+                "usr": "s:12AinuoFaceSDK15ModelAssetErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModelAssetError",
+                "printedName": "AinuoFaceSDK.ModelAssetError",
+                "usr": "s:12AinuoFaceSDK15ModelAssetErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AinuoFaceSDK15ModelAssetErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "AinuoFaceSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AinuoFaceSDK15ModelAssetErrorO9hashValueSivp",
+            "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO9hashValueSivp",
+            "moduleName": "AinuoFaceSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AinuoFaceSDK15ModelAssetErrorO9hashValueSivg",
+                "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO9hashValueSivg",
+                "moduleName": "AinuoFaceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AinuoFaceSDK15ModelAssetErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "AinuoFaceSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12AinuoFaceSDK15ModelAssetErrorO",
+        "mangledName": "$s12AinuoFaceSDK15ModelAssetErrorO",
+        "moduleName": "AinuoFaceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -29192,23 +27320,16 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceCameraControllers.swift",
       "kind": "StringLiteral",
-      "offset": 9938,
+      "offset": 9249,
       "length": 14,
       "value": "\"人脸录入\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceCameraControllers.swift",
       "kind": "BooleanLiteral",
-      "offset": 9989,
+      "offset": 9300,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceCameraControllers.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10775,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceCameraOverlayGeometry.swift",
@@ -29284,272 +27405,272 @@
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
       "offset": 1711,
-      "length": 24,
-      "value": "\"Models\/mobileface.onnx\""
+      "length": 23,
+      "value": "\"Models\/mobileface.bin\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
+      "offset": 1772,
       "length": 24,
       "value": "\"Models\/mobileface.json\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1829,
       "length": 14,
       "value": "\"face_mbf_512\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 1907,
+      "offset": 1906,
       "length": 3,
       "value": "112"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 1940,
+      "offset": 1939,
       "length": 3,
       "value": "512"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 1980,
+      "offset": 1979,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 2067,
+      "offset": 2066,
       "length": 5,
       "value": "127.5"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 2100,
+      "offset": 2099,
       "length": 5,
       "value": "127.5"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
-      "offset": 2622,
+      "offset": 2621,
       "length": 8,
       "value": "\"COSINE\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2651,
       "length": 11,
       "value": "\"EUCLIDEAN\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 3019,
+      "offset": 3018,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
+      "offset": 3059,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 3095,
+      "offset": 3094,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3128,
+      "offset": 3127,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4167,
+      "offset": 4166,
       "length": 4,
       "value": "0.55"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4203,
+      "offset": 4202,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4239,
+      "offset": 4238,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4277,
+      "offset": 4276,
       "length": 4,
       "value": "1200"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4318,
+      "offset": 4317,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4356,
+      "offset": 4355,
       "length": 5,
       "value": "9000"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4383,
+      "offset": 4382,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 4417,
+      "offset": 4416,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 4455,
+      "offset": 4454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 4492,
+      "offset": 4491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 4532,
+      "offset": 4531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4577,
+      "offset": 4576,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4614,
+      "offset": 4613,
       "length": 5,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4652,
+      "offset": 4651,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4692,
+      "offset": 4691,
       "length": 4,
       "value": "0.70"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 4738,
+      "offset": 4737,
       "length": 4,
       "value": "0.55"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 5732,
+      "offset": 5731,
       "length": 4,
       "value": "0.55"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 5770,
+      "offset": 5769,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 6167,
+      "offset": 6166,
       "length": 3,
       "value": "122"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "FloatLiteral",
-      "offset": 6207,
+      "offset": 6206,
       "length": 4,
       "value": "0.80"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 6246,
+      "offset": 6245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 6754,
+      "offset": 6753,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "IntegerLiteral",
-      "offset": 7177,
+      "offset": 7176,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "BooleanLiteral",
-      "offset": 7221,
+      "offset": 7220,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceConfigs.swift",
       "kind": "StringLiteral",
-      "offset": 7299,
+      "offset": 7298,
       "length": 27,
       "value": "\"ainuo_face_persons.sqlite\""
     },
@@ -29899,56 +28020,49 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRecognitionResults.swift",
       "kind": "Array",
-      "offset": 1440,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRecognitionResults.swift",
-      "kind": "Array",
-      "offset": 4742,
+      "offset": 2029,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRecognitionResults.swift",
       "kind": "BooleanLiteral",
-      "offset": 4810,
+      "offset": 2097,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRecognitionResults.swift",
       "kind": "IntegerLiteral",
-      "offset": 4850,
+      "offset": 2137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRegisterCameraView.swift",
       "kind": "StringLiteral",
-      "offset": 1012,
+      "offset": 915,
       "length": 44,
       "value": "\"com.ainuo.face.ios.register.camera.session\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRegisterCameraView.swift",
       "kind": "StringLiteral",
-      "offset": 1114,
+      "offset": 1017,
       "length": 42,
       "value": "\"com.ainuo.face.ios.register.camera.video\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRegisterCameraView.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1246,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRegisterCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1375,
+      "offset": 1278,
       "length": 5,
       "value": "false"
     },
@@ -29969,7 +28083,7 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceRegisterFrameProcessor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1248,
+      "offset": 1223,
       "length": 5,
       "value": "false"
     },
@@ -29997,14 +28111,14 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceSdk.swift",
       "kind": "StringLiteral",
-      "offset": 2284,
+      "offset": 2288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceSdk.swift",
       "kind": "StringLiteral",
-      "offset": 2817,
+      "offset": 2821,
       "length": 2,
       "value": "\"\""
     },
@@ -30025,21 +28139,21 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceSearchCameraView.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1600,
       "length": 35,
       "value": "\"com.ainuo.face.ios.camera.session\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceSearchCameraView.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1693,
       "length": 33,
       "value": "\"com.ainuo.face.ios.camera.video\""
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/FaceSearchCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2038,
+      "offset": 1931,
       "length": 5,
       "value": "false"
     },
@@ -30557,16 +28671,37 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/InMemoryFacePersonManager.swift",
       "kind": "Dictionary",
-      "offset": 1824,
+      "offset": 1835,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/InMemoryFacePersonManager.swift",
       "kind": "Array",
-      "offset": 1871,
+      "offset": 1882,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/ModelAssets.swift",
+      "kind": "StringLiteral",
+      "offset": 2226,
+      "length": 11,
+      "value": "\"AINUOBIN1\""
+    },
+    {
+      "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/ModelAssets.swift",
+      "kind": "StringLiteral",
+      "offset": 2273,
+      "length": 25,
+      "value": "\"ainuo-mobileface-bin-v1\""
+    },
+    {
+      "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/ModelAssets.swift",
+      "kind": "Array",
+      "offset": 2347,
+      "length": 178,
+      "value": "[254, 127, 15, 194, 3, 32, 127, 201, 210, 56, 116, 4, 211, 39, 41, 124, 15, 131, 5, 235, 110, 99, 231, 63, 243, 61, 95, 7, 21, 123, 67, 250]"
     },
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/SQLiteFacePersonManager.swift",
@@ -30578,7 +28713,7 @@
     {
       "filePath": "\/Users\/ainuo\/project\/haiba\/face_sdk\/tools\/license-factory\/tmp\/ios-xcframework-package\/Sources\/AinuoFaceSDK\/SQLiteFacePersonManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 19838,
+      "offset": 19845,
       "length": 2,
       "value": "-1"
     }

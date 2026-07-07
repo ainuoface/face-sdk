@@ -7,6 +7,8 @@
 !/build.gradle.kts
 !/settings.gradle.kts
 !/jitpack.yml
+!/docs/
+!/docs/**
 
 !/maven/
 !/maven/**

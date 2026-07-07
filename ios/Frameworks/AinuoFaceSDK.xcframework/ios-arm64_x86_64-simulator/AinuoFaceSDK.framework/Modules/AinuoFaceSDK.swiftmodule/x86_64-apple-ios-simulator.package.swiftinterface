@@ -91,7 +91,6 @@ public protocol FaceRegisterViewControllerDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency final public func onReady()
-  @_Concurrency.MainActor @preconcurrency final public func onRegisterReadyChanged(_ ready: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency final public func onRegistered(_ result: AinuoFaceSDK.FacePersonResult)
   @_Concurrency.MainActor @preconcurrency final public func onFailed(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
   @_Concurrency.MainActor @preconcurrency final public func onTips(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
@@ -121,7 +120,7 @@ public struct FaceModelConfig : Swift.Equatable {
   public var inputMean: Swift.Float
   public var inputStd: Swift.Float
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(modelAssetPath: Swift.String = "Models/mobileface.onnx", manifestAssetPath: Swift.String = "Models/mobileface.json", modelVersion: Swift.String = "face_mbf_512", modelSha256: Swift.String? = nil, inputSize: Swift.Int = 112, embeddingDim: Swift.Int = 512, normalizeEmbedding: Swift.Bool = true, similarityMetric: AinuoFaceSDK.SimilarityMetric = .cosine, inputMean: Swift.Float = 127.5, inputStd: Swift.Float = 127.5)
+  public init(modelAssetPath: Swift.String = "Models/mobileface.bin", manifestAssetPath: Swift.String = "Models/mobileface.json", modelVersion: Swift.String = "face_mbf_512", modelSha256: Swift.String? = nil, inputSize: Swift.Int = 112, embeddingDim: Swift.Int = 512, normalizeEmbedding: Swift.Bool = true, similarityMetric: AinuoFaceSDK.SimilarityMetric = .cosine, inputMean: Swift.Float = 127.5, inputStd: Swift.Float = 127.5)
   #endif
   public static func == (a: AinuoFaceSDK.FaceModelConfig, b: AinuoFaceSDK.FaceModelConfig) -> Swift.Bool
 }
@@ -228,14 +227,9 @@ public struct FaceLibraryConfig : Swift.Equatable {
   public static func == (a: AinuoFaceSDK.FaceLibraryConfig, b: AinuoFaceSDK.FaceLibraryConfig) -> Swift.Bool
 }
 public enum FaceFeatureCodec {
-  public enum CodecError : Foundation.LocalizedError {
+  public enum CodecError : Swift.Error {
     case invalidBase64
     case invalidByteLength
-    #if compiler(>=5.3) && $NonescapableTypes
-    public var errorDescription: Swift.String? {
-      get
-    }
-    #endif
     public static func == (a: AinuoFaceSDK.FaceFeatureCodec.CodecError, b: AinuoFaceSDK.FaceFeatureCodec.CodecError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -511,51 +505,6 @@ public struct FaceCompareResult : Swift.Equatable {
   #endif
   public static func == (a: AinuoFaceSDK.FaceCompareResult, b: AinuoFaceSDK.FaceCompareResult) -> Swift.Bool
 }
-public struct FaceDetectResult : Swift.Equatable {
-  public let success: Swift.Bool
-  public let code: AinuoFaceSDK.FaceStatusCode
-  public let message: Swift.String?
-  public let faces: [AinuoFaceSDK.FaceBox]
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(success: Swift.Bool, code: AinuoFaceSDK.FaceStatusCode? = nil, message: Swift.String? = nil, faces: [AinuoFaceSDK.FaceBox] = [])
-  #endif
-  public static func == (a: AinuoFaceSDK.FaceDetectResult, b: AinuoFaceSDK.FaceDetectResult) -> Swift.Bool
-}
-public struct FacePoint : Swift.Equatable {
-  public let x: Swift.Float
-  public let y: Swift.Float
-  public init(x: Swift.Float, y: Swift.Float)
-  public static func == (a: AinuoFaceSDK.FacePoint, b: AinuoFaceSDK.FacePoint) -> Swift.Bool
-}
-public struct FaceLandmarks : Swift.Equatable {
-  public let leftEye: AinuoFaceSDK.FacePoint
-  public let rightEye: AinuoFaceSDK.FacePoint
-  public let nose: AinuoFaceSDK.FacePoint
-  public let leftMouth: AinuoFaceSDK.FacePoint
-  public let rightMouth: AinuoFaceSDK.FacePoint
-  public init(leftEye: AinuoFaceSDK.FacePoint, rightEye: AinuoFaceSDK.FacePoint, nose: AinuoFaceSDK.FacePoint, leftMouth: AinuoFaceSDK.FacePoint, rightMouth: AinuoFaceSDK.FacePoint)
-  public static func == (a: AinuoFaceSDK.FaceLandmarks, b: AinuoFaceSDK.FaceLandmarks) -> Swift.Bool
-}
-public struct FaceBox : Swift.Equatable {
-  public let left: Swift.Int
-  public let top: Swift.Int
-  public let right: Swift.Int
-  public let bottom: Swift.Int
-  public let confidence: Swift.Float?
-  public let trackingId: Swift.Int?
-  public let yaw: Swift.Float?
-  public let pitch: Swift.Float?
-  public let roll: Swift.Float?
-  public let leftEyeOpenProbability: Swift.Float?
-  public let rightEyeOpenProbability: Swift.Float?
-  public let smilingProbability: Swift.Float?
-  public let mouthOpenProbability: Swift.Float?
-  public let landmarks: AinuoFaceSDK.FaceLandmarks?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(left: Swift.Int, top: Swift.Int, right: Swift.Int, bottom: Swift.Int, confidence: Swift.Float? = nil, trackingId: Swift.Int? = nil, yaw: Swift.Float? = nil, pitch: Swift.Float? = nil, roll: Swift.Float? = nil, leftEyeOpenProbability: Swift.Float? = nil, rightEyeOpenProbability: Swift.Float? = nil, smilingProbability: Swift.Float? = nil, mouthOpenProbability: Swift.Float? = nil, landmarks: AinuoFaceSDK.FaceLandmarks? = nil)
-  #endif
-  public static func == (a: AinuoFaceSDK.FaceBox, b: AinuoFaceSDK.FaceBox) -> Swift.Bool
-}
 public struct FaceSearchMatch : Swift.Equatable {
   public let person: AinuoFaceSDK.FacePerson
   public let similarity: Swift.Float
@@ -580,14 +529,12 @@ public struct FaceSearchResult : Swift.Equatable {
 }
 public protocol FaceRegisterCameraViewListener : AnyObject {
   func onReady()
-  func onRegisterReadyChanged(_ ready: Swift.Bool)
   func onRegistered(_ result: AinuoFaceSDK.FacePersonResult)
   func onFailed(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
   func onTips(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
 }
 extension AinuoFaceSDK.FaceRegisterCameraViewListener {
   public func onReady()
-  public func onRegisterReadyChanged(_ ready: Swift.Bool)
   public func onRegistered(_ result: AinuoFaceSDK.FacePersonResult)
   public func onFailed(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
   public func onTips(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
@@ -607,7 +554,6 @@ extension AinuoFaceSDK.FaceRegisterCameraViewListener {
   @_Concurrency.MainActor @preconcurrency final public func stop()
   @_Concurrency.MainActor @preconcurrency final public func switchCamera()
   @_Concurrency.MainActor @preconcurrency final public func currentConfigForTesting() -> AinuoFaceSDK.FaceRegisterCameraViewConfig
-  @_Concurrency.MainActor @preconcurrency final public func confirmRegistration()
 }
 extension AinuoFaceSDK.FaceRegisterCameraView : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
@@ -659,7 +605,6 @@ public struct FaceSearchCameraViewConfig : Swift.Equatable {
 }
 public protocol FaceSearchCameraViewListener : AnyObject {
   func onReady()
-  func onFaceDetected(_ result: AinuoFaceSDK.FaceDetectResult)
   func onMatched(_ result: AinuoFaceSDK.FaceSearchResult)
   func onMostSimilar(_ result: AinuoFaceSDK.FaceSearchResult)
   func onFailed(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
@@ -667,7 +612,6 @@ public protocol FaceSearchCameraViewListener : AnyObject {
 }
 extension AinuoFaceSDK.FaceSearchCameraViewListener {
   public func onReady()
-  public func onFaceDetected(_ result: AinuoFaceSDK.FaceDetectResult)
   public func onMatched(_ result: AinuoFaceSDK.FaceSearchResult)
   public func onMostSimilar(_ result: AinuoFaceSDK.FaceSearchResult)
   public func onFailed(code: AinuoFaceSDK.FaceStatusCode, message: Swift.String)
@@ -831,6 +775,19 @@ public struct FaceModelManifest : Swift.Codable, Swift.Equatable {
   public static func == (a: AinuoFaceSDK.FaceModelManifest, b: AinuoFaceSDK.FaceModelManifest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public enum ModelAssetError : Foundation.LocalizedError {
+  case invalidMagic
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  public static func == (a: AinuoFaceSDK.ModelAssetError, b: AinuoFaceSDK.ModelAssetError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers final public class SQLiteFacePersonManager : AinuoFaceSDK.FacePersonManaging {
   convenience public init(databaseURL: Foundation.URL, modelVersion: Swift.String, embeddingDim: Swift.Int, maxPersonCount: Swift.Int = Int.max) throws
   @objc deinit
@@ -867,3 +824,5 @@ extension AinuoFaceSDK.FaceMotionLivenessStep : Swift.Hashable {}
 extension AinuoFaceSDK.FaceMotionLivenessStep : Swift.RawRepresentable {}
 extension AinuoFaceSDK.FaceStatusCode : Swift.Hashable {}
 extension AinuoFaceSDK.FaceStatusCode : Swift.RawRepresentable {}
+extension AinuoFaceSDK.ModelAssetError : Swift.Equatable {}
+extension AinuoFaceSDK.ModelAssetError : Swift.Hashable {}

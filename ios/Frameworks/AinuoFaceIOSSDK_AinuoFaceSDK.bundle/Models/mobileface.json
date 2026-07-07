@@ -1,6 +1,6 @@
 {
   "modelVersion": "face_mbf_512",
-  "fileName": "mobileface.onnx",
+  "fileName": "mobileface.bin",
   "inputSize": 112,
   "inputChannels": 3,
   "embeddingDim": 512,
